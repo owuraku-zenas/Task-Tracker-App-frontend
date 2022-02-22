@@ -23,3 +23,33 @@
   .no__todos span {
     font-size: xxx-large;
   }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 6px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(219, 219, 219);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 197);
+  border-radius: 5px;
+  
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 1, 173); 
+}
