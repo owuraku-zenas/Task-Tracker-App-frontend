@@ -7,30 +7,30 @@ import TodoItems from './components/TodoItems';
 
 function App() {
   const [todoList, setTodoList] = useState([
-    {
-      title: "Todo 1",
-      date: "01/29/22",
-      completed: true,
-      reminder: false
-    },
-    {
-      title: "Todo 1",
-      date: "01/29/22",
-      completed: false,
-      reminder: true
-    },
-    {
-      title: "Todo 1",
-      date: "01/29/22",
-      completed: false,
-      reminder: false
-    },
-    {
-      title: "Todo 1",
-      date: "01/29/22",
-      completed: true,
-      reminder: true
-    },
+    // {
+    //   title: "Todo 1",
+    //   date: "01/29/22",
+    //   completed: true,
+    //   reminder: false
+    // },
+    // {
+    //   title: "Todo 1",
+    //   date: "01/29/22",
+    //   completed: false,
+    //   reminder: true
+    // },
+    // {
+    //   title: "Todo 1",
+    //   date: "01/29/22",
+    //   completed: false,
+    //   reminder: false
+    // },
+    // {
+    //   title: "Todo 1",
+    //   date: "01/29/22",
+    //   completed: true,
+    //   reminder: true
+    // },
   ])
 
   return (
