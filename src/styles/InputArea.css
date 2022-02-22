@@ -1,0 +1,42 @@
+.input__area {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input__area label {
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .input__area input {
+    margin-bottom: 15px;
+    height: 30px;
+  }
+
+  .save__task__btn {
+    background-color: rgb(0, 0, 197);
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: transform 0.1s;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  }
+
+  .save__task__btn:hover {
+      background-color:rgb(1, 1, 173);
+      transform: scale(1.05);
+  }
+
+  .save__task__btn:active {
+    transform: scale(0.95);
+  }
+
+  .reminder {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    column-gap: 10px;
+  }

@@ -1,0 +1,25 @@
+.todo__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin: 20px 0;
+    height: 200px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 16px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    overflow: auto;
+  }
+
+  .no__todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .no__todos h2 {
+    color: rgb(126, 126, 126);
+  }
+
+  .no__todos span {
+    font-size: xxx-large;
+  }
