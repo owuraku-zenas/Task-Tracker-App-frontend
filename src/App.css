@@ -10,7 +10,7 @@
 
 .container {
   border-radius: 5px;
-  width: 360px;
+  min-width: 380px;
   background-color: white;
   padding: 20px;
   display: flex;

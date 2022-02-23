@@ -3,7 +3,7 @@ import TodoItem from "./TodoItem";
 
 function TodoItems({ todos }) {
 
-    if (todos.length === 0) {
+    if (todos.length < 1) {
         return (
             <div className="no__todos todo__items">
                 <h2>Add A Task</h2>
