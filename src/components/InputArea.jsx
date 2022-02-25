@@ -3,7 +3,7 @@ import "../styles/InputArea.css";
 
 function InputArea() {
     return (
-        <div className="input__area">
+        <form className="input__area">
             <label htmlFor="add__task">Task</label>
             <input type="text" id="add__task" placeholder="Add Task" />
             <label htmlFor="add__date">Date</label>
@@ -13,7 +13,7 @@ function InputArea() {
                 <label htmlFor="set__reminder">Set Reminder</label>
             </div>
             <button className="save__task__btn">Save Task</button>
-        </div>
+        </form>
     )
 }
 

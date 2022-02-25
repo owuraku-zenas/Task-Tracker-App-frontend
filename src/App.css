@@ -4,16 +4,47 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   border-radius: 5px;
-  min-width: 380px;
+  width: 450px;
   background-color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+@media only screen and (max-width: 500px) {
+  .App {
+    display: block;
+  }
+  .container {
+    width: auto;
+    box-shadow: none;
+    height: 100vh;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+
+  .todo__items {
+    flex: 1;
+    background-color: white;
+    padding: 20px 2px !important;
+  }
+
+  .todo__item {
+    margin: 0 10px;
+  }
+
+ .todo__item:hover {
+    transform: none !important;
+  }
+
+  .todo__item:active {
+    transform: scale(0.90) !important;
+  }
 }
