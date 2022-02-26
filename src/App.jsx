@@ -72,7 +72,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Header clearTasks={deleteTasks} length={todoList.length} showInputArea={toggleInputArea} />
-        {inputAreaToggle ? <InputArea addTask={addTask} /> : null}
+        {inputAreaToggle ? <InputArea addTask={addTask} toggleInputArea={toggleInputArea}/> : null}
         <TodoItems todos={todoList} />
         <Footer />
       </div>

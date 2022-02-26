@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../styles/InputArea.css";
 
 
-function InputArea({ addTask }) {
+function InputArea({ addTask, toggleInputArea }) {
     const [todoInput, setTodoInput] = useState('')
     const [dateInput, setDateInput] = useState('')
     const [reminderInput, setReminderInput] = useState(false)
@@ -17,6 +17,7 @@ function InputArea({ addTask }) {
             reminder: reminderInput
         }
         addTask(newTodo)
+        toggleInputArea()
     }
     return (
         <form className="input__area" onSubmit={formHandler}>
