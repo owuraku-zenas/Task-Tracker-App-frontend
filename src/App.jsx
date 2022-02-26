@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -38,6 +38,12 @@ function App() {
   ])
 
   const [inputAreaToggle, setInputAreaToggle] = useState(false)
+
+  useEffect(() => {
+    if (todoList.length === 0) {
+      setInputAreaToggle(true)
+    }
+  }, [todoList])
 
   const toggleInputArea = () => {
     setInputAreaToggle(!inputAreaToggle)
