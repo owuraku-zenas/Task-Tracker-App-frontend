@@ -16,8 +16,8 @@ function TodoItems({ todos }) {
     return (
         <div className="todo__items">
             {
-                todos.map((todo, i) => (
-                    <TodoItem key={i} title={todo.title} date={todo.date} completed={todo.completed} reminder={todo.reminder} />
+                todos.map((todo) => (
+                    <TodoItem key={todo.id} title={todo.title} date={todo.date} completed={todo.completed} reminder={todo.reminder} />
                 ))
             }
         </div>

@@ -11,6 +11,7 @@
 .container {
   border-radius: 5px;
   width: 450px;
+  height: 80%;
   background-color: white;
   padding: 20px;
   display: flex;
@@ -31,7 +32,6 @@
   }
 
   .todo__items {
-    flex: 1;
     background-color: white;
     padding: 20px 2px !important;
   }
@@ -47,4 +47,5 @@
   .todo__item:active {
     transform: scale(0.90) !important;
   }
+
 }

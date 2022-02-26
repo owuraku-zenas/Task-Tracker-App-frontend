@@ -8,8 +8,8 @@
     margin: 10px 0;
   }
   
-  .input__area input {
-    margin-bottom: 15px;
+  .input__area input[type=text] {
+    margin: 10px 0;
     height: 30px;
   }
 
@@ -27,7 +27,6 @@
 
   .save__task__btn:hover {
       background-color:rgb(1, 1, 173);
-      transform: scale(1.05);
   }
 
   .save__task__btn:active {
@@ -39,4 +38,5 @@
     flex-direction: row;
     justify-content: left;
     column-gap: 10px;
+    align-items: center;
   }
