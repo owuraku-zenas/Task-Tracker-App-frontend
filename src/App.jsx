@@ -52,6 +52,7 @@ function App() {
   // Delete task
   const deleteTask = (id) => {
     setTodoList( todoList.filter((todo) => todo.id !== id))
+    console.log("Task Removed");
   }
 
   /**

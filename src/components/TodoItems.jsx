@@ -5,7 +5,7 @@ function TodoItems({ todos, onDelete }) {
 
     if (todos.length < 1) {
         return (
-            <div className="no__todos todo__items">
+            <div className="no__todos todo__items__area">
                 <h2>Add A Task</h2>
                 <span>📝</span>
             </div>
@@ -14,14 +14,33 @@ function TodoItems({ todos, onDelete }) {
 
 
     return (
-        <div className="todo__items">
-            {
-                todos.map((todo) => (
-                    // <TodoItem key={todo.id} title={todo.title} date={todo.date} id={todo.id} completed={todo.completed} reminder={todo.reminder} onDelete={onDelete} />
-                    <TodoItem key={todo.id} todo={todo} onDelete={onDelete} />
-                ))
-            }
+        <div className="todo__items__area">
+            <div className="section">
+                <span className="section__name">
+                    Undone
+                </span>
+                <div className="todo__items">
+                    {
+                        todos.filter((todo) => todo.completed === false).map((todo) => (
+                            <TodoItem key={todo.id} todo={todo} onDelete={onDelete} />
+                        ))
+                    }
+                </div>
+            </div>
+            <div className="section">
+                <span className="done">
+                    Done
+                </span>
+                <div className="todo__items">
+                    {
+                        todos.filter((todo) => todo.completed === true).map((todo) => (
+                            <TodoItem key={todo.id} todo={todo} onDelete={onDelete} />
+                        ))
+                    }
+                </div>
+            </div>
         </div>
+
     );
 }
 
