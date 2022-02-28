@@ -9,6 +9,7 @@
     box-shadow: 0 16px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     overflow: auto;
     flex: 1;
+    background-color: rgb(235, 240, 247);
   }
 
   .no__todos {

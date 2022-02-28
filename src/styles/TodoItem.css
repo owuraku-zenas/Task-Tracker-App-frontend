@@ -1,34 +1,55 @@
 .remove__task__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(223, 46, 46);
   font-weight: 900;
-  /* background-color: black; */
   width: 25px;
   height: 25px;
   text-align: center;
+  width: 40px;
+  height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.remove__task__btn:hover {
+  background-color: red;
+  box-shadow: 0 16px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgba(255, 0, 0, 0.644);
+  color: white;
 }
 
 .todo__item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 7px;
-  padding: 0 10px;
-  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border-radius: 5px;
   box-shadow: 0 16px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   transition: transform 0.3s;
-  /* transition: border-left 0.3s; */
   cursor: pointer;
 }
 
+.info {
+  padding: 15px;
+  overflow: hidden;
+  width: 40%;
+}
+
+.info h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
 .todo__item:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 .todo__item:active {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .todo__item h3 {
@@ -43,6 +64,6 @@
 }
 
 .date {
-    display: flex;
-    justify-content: space-between;
+  color: gray;
+  font-size: 14px;
 }

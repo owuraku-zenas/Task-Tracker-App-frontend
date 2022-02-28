@@ -15,7 +15,8 @@ function TodoItem({ title, date, completed, reminder }) {
         borderRadius: "5px",
         padding: "4px",
         fontSize: "small",
-        marginRight: "15px"
+        marginRight: "15px",
+        boxShadow: "0 16px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgba(0, 0, 255, 0.5)"
     }
 
     let reminderOff = {
@@ -24,17 +25,18 @@ function TodoItem({ title, date, completed, reminder }) {
         borderRadius: "5px",
         padding: "4px",
         fontSize: "small",
-        marginRight: "15px"
+        marginRight: "15px",
+        boxShadow: "0 16px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgba(255, 0, 0, 0.5)"
     }
 
     return (
-
-        <div className="todo__item" style={completed ? complete : null}>
-            <h3>
-                {title}
-                <div className="remove__task__btn">x</div>
-            </h3>
-            <p className="date">{date} <span style={reminder ? reminderOn : reminderOff}>{reminder ? "Reminder On" : "Reminder Off"}</span></p>
+        <div className="todo__item">
+            <div class="info">
+                <h3> {title} </h3>
+                <p className="date"> {date} </p>
+            </div>
+            <span style={reminder ? reminderOn : reminderOff} className="reminder">{reminder ? "Reminder On" : "Reminder Off"}</span>
+            <div class="remove__task__btn">x</div>
         </div>
     );
 }
