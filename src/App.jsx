@@ -51,7 +51,7 @@ function App() {
 
   // Delete task
   const deleteTask = (id) => {
-    console.log("delete", id);
+    setTodoList( todoList.filter((todo) => todo.id !== id))
   }
 
   /**
@@ -73,7 +73,7 @@ function App() {
       <div className="container">
         <Header clearTasks={deleteTasks} length={todoList.length} showInputArea={toggleInputArea} />
         {inputAreaToggle ? <InputArea addTask={addTask} toggleInputArea={toggleInputArea}/> : null}
-        <TodoItems todos={todoList} />
+        <TodoItems todos={todoList} onDelete={deleteTask}/>
         <Footer />
       </div>
     </div>
